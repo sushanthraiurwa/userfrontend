@@ -1,0 +1,92 @@
+/* User Page Layout */
+.user-page {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);  /* Beautiful gradient background */
+    color: #fff;
+    padding: 50px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .user-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .user-header h1 {
+    font-size: 3rem;
+    font-weight: 700; 
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .user-header p {
+    font-weight: 400; 
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  
+  /* Leaderboard Styles */
+  .leaderboard-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .leaderboard-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Table Styles */
+  .leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  .leaderboard-table th, .leaderboard-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .leaderboard-table th {
+    background-color: #ff7e5f;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .leaderboard-table tr:hover {
+    background-color: #ffe4e1;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .leaderboard-table td {
+    font-size: 1.1rem;
+  }
+  
+  /* Transitions */
+  .leaderboard-container {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 0.6s forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
